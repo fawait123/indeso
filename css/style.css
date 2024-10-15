@@ -1,0 +1,62 @@
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.min-w-364 {
+  min-width: 364px;
+}
+
+.max-w-364 {
+  max-width: 364px;
+}
+
+.text-blue-1 {
+  color: #00808d;
+}
+
+.w-full {
+  width: 100%;
+}
+.badge {
+  padding: 5px 7px;
+  border-radius: 50%;
+}
+
+.badge-blue-1 {
+  background: #dff8f5;
+  color: #06a08e;
+}
+
+.bullet {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.bullet-red {
+  background: #b3261e;
+}
+
+.bullet-yellow {
+  background: #e8b931;
+}
+
+.bullet-blue-1 {
+  background: #dff8f5;
+}
+
+.card-item {
+  padding: 10px 12px;
+}
+
+.box {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
