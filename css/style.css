@@ -10,6 +10,10 @@
   margin-left: 20px;
 }
 
+.w-full {
+  width: 100% !important;
+}
+
 .ml-40 {
   margin-left: 40px;
 }
