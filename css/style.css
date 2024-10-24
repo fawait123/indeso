@@ -2,6 +2,18 @@
   font-size: 12px !important;
 }
 
+.bg-slate {
+  background: #f3f4f6;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-blue-500 {
+  color: #004c82;
+}
+
 .bg-transparent {
   background: transparent !important;
 }
