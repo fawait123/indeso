@@ -26,12 +26,30 @@
   min-width: 364px;
 }
 
+.min-w-157 {
+  min-width: 137px;
+}
+
+.max-w-157 {
+  max-width: 137px;
+}
+
 .max-w-364 {
   max-width: 364px;
 }
 
 .text-blue-1 {
   color: #00808d;
+}
+
+.gap-20 {
+  row-gap: 20% !important;
+  column-gap: 20% !important;
+}
+
+.gap-40 {
+  row-gap: 40% !important;
+  column-gap: 40% !important;
 }
 
 .w-full {

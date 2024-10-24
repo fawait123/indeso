@@ -50,8 +50,8 @@
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#picAdmin">PIC Admin</button>
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#supportingDocument">Supporting
             Document</button>
-        <button class="btn btn-primary">Form KPI</button>
-        <button class="btn btn-primary">Filter</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fillingFormKpi">Form KPI</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#filter">Filter</button>
     </div>
 
     <!-- modal pic -->
@@ -120,6 +120,145 @@
     </div>
     <!-- end modal supporting document -->
 
+    <!-- modal filling form kpi -->
+    <div class="modal fade" id="fillingFormKpi" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCenterTitle">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-8 row gap-40">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="" class="form-label">UoM</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="" class="form-label">UoM</label>
+                                <select name="" id="" class="form-control">
+                                    <option value="">Choose Remark</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-8 row gap-40">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="type" class="form-label">Type</label>
+                                <select name="type" id="type" onchange="changeType(this)" class="form-control">
+                                    <option value="quarter">Quarter</option>
+                                    <option value="semester">Semester</option>
+                                    <option value="yearly">Yearly</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="" class="form-label">Formula</label>
+                                <select name="" id="" class="form-control">
+                                    <option value="">Choose Formula</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Semester</th>
+                                    <th>Target</th>
+                                    <th>Actual</th>
+                                    <th>Achievement</th>
+                                    <th>ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal filling form kpi -->
+
+    <!-- modal filter -->
+    <div class="modal fade" id="filter" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCenterTitle">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-8 row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="" class="form-label">Year</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="" class="form-label">Month</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Status</label>
+                        <div class="d-flex justify-content-start">
+                            <div class="border p-2 min-w-157 max-w-157">
+                                <input type="checkbox" class="form-check-input" id="open">
+                                <label for="open">Open</label>
+                            </div>
+                            <div class="border p-2 min-w-157 max-w-157">
+                                <input type="checkbox" class="form-check-input" id="close">
+                                <label for="close">Close</label>
+                            </div>
+                            <div class="border p-2 min-w-157 max-w-157">
+                                <input type="checkbox" class="form-check-input" id="in-progress">
+                                <label for="in-progress">In progress</label>
+                            </div>
+                            <div class="border p-2 min-w-157 max-w-157">
+                                <input type="checkbox" class="form-check-input" id="postponed">
+                                <label for="postponed">Postponed</label>
+                            </div>
+                            <div class="border p-2 min-w-157 max-w-157">
+                                <input type="checkbox" class="form-check-input" id="all">
+                                <label for="all">all</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal filter -->
+
     <!-- end content -->
 
     <!-- Core JS -->
@@ -149,6 +288,137 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
 
     <script>
+        function getRowTable(type) {
+            const dataype = {
+                semester: {
+                    data: [
+                        {
+                            row: 'Mid Year',
+                            rowSpan: 1
+                        },
+                        {
+                            row: 'End Year',
+                            rowSpan: 1
+                        },
+                        {
+                            row: 'YTD',
+                            rowSpan: 2
+                        },
+                        {
+                            row: 'Full Year Achievement',
+                            rowSpan: 0
+                        }
+                    ]
+                },
+                yearly: {
+                    data: [
+                        {
+                            row: new Date().getFullYear(),
+                            rowSpan: 1
+                        },
+                        {
+                            row: 'YTD',
+                            rowSpan: 2
+                        },
+                        {
+                            row: 'Full Year Achievement',
+                            rowSpan: 0
+                        }
+                    ]
+                },
+                quarter: {
+                    data: [
+                        {
+                            row: 'January',
+                            rowSpan: 3
+                        },
+                        {
+                            row: 'February',
+                            rowSpan: 0
+                        },
+                        {
+                            row: 'March',
+                            rowSpan: 0
+                        },
+                        {
+                            row: 'April',
+                            rowSpan: 3
+                        },
+                        {
+                            row: 'May',
+                            rowSpan: 0
+                        },
+                        {
+                            row: 'June',
+                            rowSpan: 0
+                        },
+                        {
+                            row: 'July',
+                            rowSpan: 3
+                        },
+                        {
+                            row: 'August',
+                            rowSpan: 0
+                        },
+                        {
+                            row: 'September',
+                            rowSpan: 0
+                        },
+                        {
+                            row: 'Oktober',
+                            rowSpan: 3
+                        },
+                        {
+                            row: 'November',
+                            rowSpan: 0
+                        },
+                        {
+                            row: 'December',
+                            rowSpan: 0
+                        },
+                        {
+                            row: 'YTD',
+                            rowSpan: 2
+                        },
+                        {
+                            row: 'Full Year Achievement',
+                            rowSpan: 0
+                        }
+                    ]
+                }
+            }
+            let tBody = '';
+            $.each(dataype[type].data, function (i, item) {
+                const rows = $('<tr>').append(
+                    $('<td>').html(
+                        $('<b>').html(item.row)
+                    ),
+                    $('<td>').append(
+                        $('<input class="form-control">')
+                    ),
+                    $('<td>').append(
+                        $('<input class="form-control">')
+                    ),
+                    $('<td>').append(
+                        $('<input class="form-control">')
+                    ),
+                    item.rowSpan > 0 ? `<td rowspan="${item.rowSpan}">
+                                                <button class="btn btn-${i == 0 ? 'danger' : 'primary'} btn-sm">
+                                                    <span class="bx bx-lock"></span>
+                                                </button>
+                                            </td>` : ''
+                )
+
+                tBody += $('<tr>').html(rows.clone()).html()
+            })
+
+            $("#tbody").html(tBody)
+        }
+
+        function changeType(target) {
+            const type = $(target).val()
+            getRowTable(type)
+        }
         $(document).ready(function () {
             console.log('oke')
             $(".select2").select2({
@@ -163,6 +433,9 @@
                     'error': 'Ooops, something wrong happended.'
                 }
             });
+
+            const type = $("#type").find(':selected').val()
+            getRowTable(type)
         })
     </script>
 </body>
