@@ -1,0 +1,258 @@
+<!doctype html>
+
+<html lang="en" class="light-style layout-wide" dir="ltr" data-theme="theme-default" data-assets-path="./assets/"
+    data-template="vertical-menu-template-free" data-style="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Demo : Blank layout - Layouts | sneat - Bootstrap Dashboard PRO</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="./assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="./assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="./assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="./assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="./assets/js/config.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="p-12">
+    <div class="card">
+        <div class="card-header d-flex justify-content-between">
+            <div class="d-flex flex-column gap-2">
+                <span class="fw-bold">Strategic Management</span>
+                <span class="text-11">Dashboard Strategic Management</span>
+            </div>
+            <div>
+                <button class="btn btn-outline-primary btn-sm gap-2">
+                    View KPI Map
+                    <span class="bx bx-map text-12"></span>
+                </button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Primary
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Another action</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="text-blue-1 fw-bold">Indeso Aroma</h5>
+            <hr>
+            <div class="border rounded p-2 mb-4">
+                <div class="d-flex flex-column gap-2">
+                    <span class="fw-bold">VISION</span>
+                    <p class="text-12">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <span class="fw-bold">MISION</span>
+                    <p class="text-12">Lorem ipsum dolor sit amet consectetur. Et libero sollicitudin amet senectus a
+                        tellus massa
+                        fermentum sit.</p>
+                </div>
+            </div>
+            <div class="border rounded p-4">
+                <div class="mb-8">
+                    <span class="fw-bold">DESTIONANTION</span>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-sm">Destination</button>
+                    <button class="btn btn-primary btn-sm">Destination</button>
+                    <button class="btn btn-primary btn-sm">Destination</button>
+                    <button class="btn btn-primary btn-sm">Destination</button>
+                    <button class="btn btn-primary btn-sm">Destination</button>
+                    <button class="btn btn-primary btn-sm">Destination</button>
+                    <button class="btn btn-primary btn-sm">Destination</button>
+                </div>
+            </div>
+            <div class="mt-4" id="financialAccordian">
+                <div class="accordion-item active">
+                    <div class="d-flex justify-content-between mb-4 p-3 bg-blue-500 text-white rounded-top">
+                        <span>FINANCIAL</span>
+                        <span class="bx bx-down-arrow-circle cursor-pointer" data-bs-toggle="collapse"
+                            data-bs-target="#financialOne" aria-expanded="true" aria-controls="financialOne"></span>
+                    </div>
+
+                    <div id="financialOne" class="accordion-collapse collapse show"
+                        data-bs-parent="#financialAccordian">
+                        <div class="accordion-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Code</th>
+                                            <th>Objectives/KPI/Initiatives</th>
+                                            <th>Status</th>
+                                            <th>Target % / Date</th>
+                                            <th>Actual % / Date</th>
+                                            <th>Achievement%</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-yellow-100 text-slate-900">
+                                            <td>F1</td>
+                                            <td colspan="5">Increase Company Profitability</td>
+                                            <td>
+                                                <span class="bx bx-down-arrow-circle cursor-pointer"
+                                                    data-bs-toggle="collapse" data-bs-target="#financial-1"
+                                                    aria-expanded="false" aria-controls="financial-1"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-slate-100 collapse" id="financial-1">
+                                            <td>F1.1</td>
+                                            <td>EBITDA</td>
+                                            <td>
+                                                <span class="bx bx-flag text-danger"></span>
+                                            </td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>50</td>
+                                            <td>
+                                                <span class="bx bx-down-arrow-circle cursor-pointer"
+                                                    data-bs-toggle="collapse" data-bs-target="#financial-1-1"
+                                                    aria-expanded="false" aria-controls="financial-1-1"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white collapse" id="financial-1-1">
+                                            <td>F1.1.1</td>
+                                            <td>EBITDA</td>
+                                            <td>
+                                                <span class="bx bx-flag text-danger"></span>
+                                            </td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td colspan="2">50</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4" id="customerAccordian">
+                <div class="accordion-item active">
+                    <div class="d-flex justify-content-between mb-4 p-3 bg-blue-500 text-white rounded-top">
+                        <span>CUSTOMER</span>
+                        <span class="bx bx-down-arrow-circle cursor-pointer" data-bs-toggle="collapse"
+                            data-bs-target="#customerOne" aria-expanded="true" aria-controls="customerOne"></span>
+                    </div>
+
+                    <div id="customerOne" class="accordion-collapse collapse show" data-bs-parent="#customerAccordian">
+                        <div class="accordion-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Code</th>
+                                            <th>Objectives/KPI/Initiatives</th>
+                                            <th>Status</th>
+                                            <th>Target % / Date</th>
+                                            <th>Actual % / Date</th>
+                                            <th>Achievement%</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-yellow-100 text-slate-900">
+                                            <td>F1</td>
+                                            <td colspan="5">Increase Company Profitability</td>
+                                            <td>
+                                                <span class="bx bx-down-arrow-circle cursor-pointer"
+                                                    data-bs-toggle="collapse" data-bs-target="#customer-1"
+                                                    aria-expanded="false" aria-controls="customer-1"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-slate-100 collapse" id="customer-1">
+                                            <td>F1.1</td>
+                                            <td>EBITDA</td>
+                                            <td>
+                                                <span class="bx bx-flag text-danger"></span>
+                                            </td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>50</td>
+                                            <td>
+                                                <span class="bx bx-down-arrow-circle cursor-pointer"
+                                                    data-bs-toggle="collapse" data-bs-target="#customer-1-1"
+                                                    aria-expanded="false" aria-controls="customer-1-1"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-white collapse" id="customer-1-1">
+                                            <td>F1.1.1</td>
+                                            <td>EBITDA</td>
+                                            <td>
+                                                <span class="bx bx-flag text-danger"></span>
+                                            </td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td colspan="2">50</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="./assets/vendor/libs/popper/popper.js"></script>
+    <script src="./assets/vendor/js/bootstrap.js"></script>
+    <script src="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="./assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag before closing body tag for github widget button. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
